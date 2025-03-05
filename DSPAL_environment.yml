@@ -1,4 +1,4 @@
-name: DSPAL
+name: PromptAL
 channels:
   - defaults
 dependencies:
