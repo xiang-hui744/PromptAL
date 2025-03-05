@@ -1,6 +1,6 @@
-# DSPAL: Dynamic Soft Prompt for Few-shot Active Learning
+# PromptAL: Sample-Aware Dynamic Soft Prompts for Few-Shot Active Learning
 
->This repository contains the official implementation of the paper titled "DSPAL: Dynamic Soft Prompt for Few-shot Active Learning".
+>This repository contains the official implementation of the paper titled "PromptAL: Sample-Aware Dynamic Soft Prompts for Few-Shot Active Learning".
 
 <p align="center">
   <img src="DSPAL_figure.png" width="800">
@@ -8,10 +8,10 @@
 
 ## Datasets 
 >We evaluate the AL algorithms in 6 Natural Language Processing (NLP)  datasets:
--  `TREC`, `IMDB`, `AGNEWS`, `DBPEDIA`, `Yelp-full` ,`Yahoo!Answers`
+-  `TREC`, `IMDB`, `AGNEWS`, `DBPEDIA`, `Yelp-full`,` Yahoo!Answers`
 
 ## Models
->We use  `RoBERTa-base` for the experiment, but the code can support any other model (e.g. from [HuggingFace](https://github.com/huggingface/transformers)) .
+>We use  `RoBERTa-base` for the experiment, but the code can support any other model (e.g. ,from [HuggingFace](https://github.com/huggingface/transformers)) .
 
 ## Installation
 >The experiments were performed on an NVIDIA  A100 GPU.
@@ -30,11 +30,11 @@ conda env create -f DSPAL_environment.yml
   - Possible values: `hmask_cluster_calibration_entropy_local_div`, `hmask_cluster_local_div`, `hmask_cluster_entropy_local_div`, `hmask_cluster_calibration_entropy`,`hmask_cluster_calibration_entropy`,`hmask_cluster_entropy`,`entropy`,`random`
 
 
->`hmask_cluster_calibration_entropy_local_div` represents the DSPAL method, while the other methods are various ablation variants.
+>`hmask_cluster_calibration_entropy_local_div` represents the PromptAL method, while the other methods are various ablation variants.
 
 - `dataset_name`: Name of the task to be trained on.
     - Possible values: dbpedia', `imdb`, `agnews`, `yelp`, `trec`, `yahoo`, `dbpedia`
-- `num_virtual_tokens` : Task-Specific Prompt size
+- `num_virtual_tokens`: Task-Specific Prompt size
 - `instance_tokens`:Sample-Specific  Prompt size
 - `multi_head`: The number of attention heads in the self-attention mechanism.
 ## Usage
