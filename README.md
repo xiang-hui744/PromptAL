@@ -17,7 +17,7 @@
 >The experiments were performed on an NVIDIA  A100 GPU.
 you should create a conda environment for the project:
 ```
-conda env create -f DSPAL_environment.yml
+conda env create -f PromptAL_environment.yml
 ```
 
 ## Training the Model
