@@ -3,7 +3,7 @@
 >This repository contains the official implementation of the paper titled "PromptAL: Sample-Aware Dynamic Soft Prompts for Few-Shot Active Learning".
 
 <p align="center">
-  <img src="DSPAL_figure.png" width="800">
+  <img src="PromptAL_figure.png" width="800">
 </p>
 
 ## Datasets 
